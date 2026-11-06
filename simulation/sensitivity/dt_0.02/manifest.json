@@ -1,0 +1,46 @@
+{
+  "command": [
+    "./work-build/benchmark",
+    "--hours",
+    "0.05",
+    "--dt",
+    "0.02",
+    "--seeds",
+    "1",
+    "--output",
+    "simulation/sensitivity/dt_0.02",
+    "--mag-systematics",
+    "1",
+    "--scenario",
+    "-1",
+    "--seed-start",
+    "1"
+  ],
+  "source_sha256": {
+    "Makefile": "5826d2305d01ce223b64e41d1ff296a836a88b45d63c7d06cca8f8294ebbb208",
+    "src/navigation.h": "3a8f3043530bce4296f08400ab7c23deb3509ba0a000be422b11f64ed68a39cb",
+    "src/navigation.cpp": "283272e6dd14dcc232463c0a51eef9bceba5bbe18d08a0a23ec056ada7788047",
+    "tests/navigation_tests.cpp": "4ec24b519da54cbb279e7e3e4893880a3e5f57859234f2eb3ecc00c0a283921f",
+    "tests/physics_tests.cpp": "3c6679f9bfe2cc92bd1912d060b78f65335da007708f66e6e3ad876b12979278",
+    "tests/trajectory_tests.cpp": "7787f9147ced02177cd750081cbe28276b12da4fc8a2d7c0ccf0039d50a3b9ee",
+    "simulation/benchmark.cpp": "d84a9defc99790f5d97306b6f632839130aadab7c3aa817a478e809007bdb7e9",
+    "simulation/run_benchmark.py": "6b6a1db31b67c0e9b6e3101f97c8bc4df60f84686dea128064589808fea0d9d9",
+    "baseline/algorithm_core.h": "b14a55e808365cd1200a4bac3240607079e8d43f14d120bcafac496a423c94c4",
+    "baseline/algorithm_core.cpp": "ba28f7c16b6dd763efe8805db18eecfcb9c62839a57af190811241c704a78b83",
+    "baseline/data_filtration.cpp": "8c116ad07a634b15bb078a428926c0bb7d19c9dc77cb4236116cb98b14e47a08"
+  },
+  "elapsed_wall_s": 0.1954631805419922,
+  "compiler": "Apple clang version 21.0.0 (clang-2100.1.1.101)\nTarget: arm64-apple-darwin25.5.0\nThread model: posix\nInstalledDir: /Library/Developer/CommandLineTools/usr/bin",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python": "3.9.6",
+  "seeds": [
+    1
+  ],
+  "simulated_hours_per_seed_scenario": 0.05,
+  "sample_interval_s": 0.02,
+  "scenarios": 9,
+  "selected_scenario": -1,
+  "magnetic_systematics_enabled": true,
+  "sensor_profile": "st10dof_calibrated_synthetic",
+  "note": "ST10DOF-appropriate quantization with synthetic calibrated residuals; not measured hardware performance. std::normal_distribution is reproducible within this C++ library, not guaranteed bit-identical across libraries."
+}

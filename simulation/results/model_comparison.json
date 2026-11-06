@@ -1,0 +1,58 @@
+{
+  "note": "Paired synthetic regression and calibration ablation; not hardware accuracy or a universal optimum.",
+  "scenario": "continuous_10dof_only",
+  "kernels": {
+    "N16": {
+      "error_states": 16,
+      "navigation.cpp_sha256": "a3d32597f6686f0eba0ed0a9beacd83cf7451d62d242987f748ed1c4f52b3362",
+      "navigation.h_sha256": "59593bc2d4b7423c0a6e71469ef6e62ddcb94ab61f2345b1d5f94c1f85ce8a55",
+      "retained_source_directory": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/work/st10dof-n16-baseline/src"
+    },
+    "N19": {
+      "error_states": 19,
+      "navigation.cpp_sha256": "1c85c70c2f2bef7e4d094599b017164871e829a388d1a031151703b1aa648bbb",
+      "navigation.h_sha256": "63ba26f2a63d3c0c3b4426d158b1e2f318b36c8f59d204d397b592e75390e74a",
+      "retained_source_directory": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/work/model-N19/src"
+    },
+    "N25": {
+      "error_states": 25,
+      "navigation.cpp_sha256": "283272e6dd14dcc232463c0a51eef9bceba5bbe18d08a0a23ec056ada7788047",
+      "navigation.h_sha256": "3a8f3043530bce4296f08400ab7c23deb3509ba0a000be422b11f64ed68a39cb",
+      "retained_source_directory": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/outputs/accel-gyro-processing/src"
+    }
+  },
+  "inputs": [
+    {
+      "model": "N16",
+      "path": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/work/st10dof-n16-paired-systematics/summary.csv",
+      "sha256": "a1c8b8a9ba8c61cbea09a6f1b33f6d403cbb900283298db969a61931540b2f00"
+    },
+    {
+      "model": "N16",
+      "path": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/work/st10dof-n16-paired-no-systematics/summary.csv",
+      "sha256": "9d7b0c9a0a7e2325bf5d8c9a68a84360e311fa76a1b92ad3afba0b29436a5a41"
+    },
+    {
+      "model": "N19",
+      "path": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/work/model-N19/simulation/results/summary.csv",
+      "sha256": "de5282cfdd8eecb7253ca0c88b854ea265fdcefae54ddbaa135337e8686b6580"
+    },
+    {
+      "model": "N19",
+      "path": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/work/model-N19/simulation/ablation_no_mag_systematics/summary.csv",
+      "sha256": "3abd1901c89de7cea0a16a3058977daa1d5d7d4c57042c4ea00147b659fa3777"
+    },
+    {
+      "model": "N25",
+      "path": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/outputs/accel-gyro-processing/simulation/results/summary.csv",
+      "sha256": "fd4931fe0d62bba1854167598990329d3b9c9c952a8ebc5d86aa2ec9cf981ec2"
+    },
+    {
+      "model": "N25",
+      "path": "/Users/windexs/Documents/Codex/2026-11-06/new-chat-2/outputs/accel-gyro-processing/simulation/ablation_no_mag_systematics/summary.csv",
+      "sha256": "97f8da7160de8e668c6f54d8f09d179021bc7fb391ed0683130b4dc2c403c413"
+    }
+  ],
+  "paired_baseline_checks_passed": true,
+  "comparison_csv_sha256": "bbfd50dd2174dddb373c90b1a16944fba5dd1e914ce87164dab70038cd69096c"
+}

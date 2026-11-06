@@ -1,0 +1,7 @@
+work-build/
+build/
+__pycache__/
+*.pyc
+firmware/imu_lora/board_config.h
+firmware/st_imu_lora/board_config.h
+replay
